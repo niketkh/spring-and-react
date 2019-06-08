@@ -11,7 +11,7 @@ class App extends Component {
     }
 
     hello = () => {
-        fetch('/api/hello')
+        fetch('/incubate/api/hello')
             .then(response => response.text())
             .then(message => {
                 this.setState({message: message});
